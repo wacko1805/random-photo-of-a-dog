@@ -1,6 +1,6 @@
 
 
-    fetch('http://anypost.pixel-fy.com/dog.php')
+    fetch('http://anypost.rf.gd/dog.php')
         .then(function (response) {
             return response.json();
         })
