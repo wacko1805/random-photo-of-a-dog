@@ -1,6 +1,6 @@
 
 
-    fetch('http://anypost.pixel-fy.com/dog.php')
+    fetch('https://random-dog-api.herokuapp.com/')
     
         .then(function (response) {
             return response.json();
