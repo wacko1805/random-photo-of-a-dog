@@ -131,8 +131,10 @@ img {
 	border-radius: 30px;
 	padding: 5px 15px;
 	color: white;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .active {
@@ -144,6 +146,8 @@ img {
 	color: white;
   text-align: center;
   cursor: not-allowed;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 footer .links {
 	padding-top: 30px;
