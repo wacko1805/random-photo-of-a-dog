@@ -1,129 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body {
-    background-color: #B5EAEA;
-    font-family: 'Prompt', sans-serif;
-    background-color: #333;
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
 
-}
-
-header {
-    margin-bottom: 90px;
-    margin-top: 70px;
-    text-align: center;
-}
-header h1 {
-    text-align: center;
-    font-size: 50px;
-    color: #C490E4;
 }
 
 img {
-    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 15px;
+    width: 710px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18); 
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18);
+    z-index: -99;
+}
+main {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 15px;
+  width: 710px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18); 
+  box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18);
+  z-index: -99;
+  padding-left: 20px;
+}
 
-   padding: 10px;
-   border-radius: 10px;
+@media only screen and (max-width: 800px) {
+  main {
+      width: 90% ;
+  
+  }
 }
 @media only screen and (max-width: 800px) {
     img {
+        width: 90% ;
     
-       padding: 10px;
-       border-radius: 10px;
     }
 }
 
-.image {
-    border: 13px dashed #C490E4;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 720px;
-    border-radius: 5px;
+main h2 {
+  color: #949CDF;
+
 }
-@media only screen and (max-width: 800px) {
-    .image {
-        width: 80% ;
-    
-    }
+main p {
+  color: #787878;
+  font-size: 20px;
 }
 .buttons {
     text-align: center;
- 
+ position: fixed;
+ bottom: 20px;
+ left: 30%;
+ right: 30%;
    
-}
-
-.buttons button {
-    background-color: #C490E4;
-    border: none;
-    margin-top: 20px;
-    border-radius: 5px;
-    color: white;
-    padding: 7px 32px;
-    font-family: 'Prompt', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-
-* { 
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    margin: 0;
-  }
-  
-
-  
-  .load {
-    display:flex;
-    justify-content: center;
-    margin: 50px auto;
-  }
-  
-  .load div {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    margin: 0 5px;
-    animation-name: up-and-down;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  
-  .load .two {
-    animation-delay: 0.3s;
-  }
-  .load .three {
-    animation-delay: 0.6s;
-  
-  }
-  @keyframes up-and-down {
-    to {
-      opacity: 0.2;
-      transform: translateY(-20px);
-      -webkit-transform: translateY(-20px);
-      -moz-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-      -o-transform: translateY(-20px);
-  }
-    
-  }
-
-
-  footer {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
 }
 
  .badge  {
@@ -135,19 +74,103 @@ img {
   text-align: center;
   text-decoration: none;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.active {
-  background-color: #333;
+.fact  {
+	background-color: #949CDF;
 	border-radius: 30px;
-  border: 1px #555 solid;
-  text-decoration: none;
 	padding: 5px 15px;
 	color: white;
-  text-align: center;
-  cursor: not-allowed;
   display: inline-block;
+  text-align: center;
+  text-decoration: none;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18); 
+box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.18);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #787878;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+  padding-right: 20px;
+}
+
+.topnav b {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.topnav a:hover {
+  background-color: #949CDF;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  margin-top: 50px;
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+
+footer {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+  text-decoration: none;
+}
+
+footer .back-to-top  {
+	background-color: #949CDF;
+	border-radius: 30px;
+	padding: 5px 15px;
+	color: white;
 }
 footer .links {
 	padding-top: 30px;
@@ -170,10 +193,14 @@ footer .social-links {
 footer .social-links i {
 	padding: 10px;
 	font-size: 25px;
-	color: #B5EAEA;
+	color: #555555;
 	text-decoration: none;
 	transition: 0.3s;
 }
 footer .social-links i:hover {
 	color: #949CDF;
+}
+
+.space {
+  margin-top: 37%;
 }
