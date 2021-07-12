@@ -1,4 +1,4 @@
-fetch('https://random-dog-api.herokuapp.com/dog')
+fetch('http://random-dog-api.herokuapp.com/dog')
     
 .then(function (response) {
     return response.json();
